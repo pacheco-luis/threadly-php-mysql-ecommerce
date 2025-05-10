@@ -1,27 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php loadPartial('head'); ?>
+<?php loadPartial('navbar'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main class="main">
+    <!-- HERO SECTION -->
+    <section class="section-hero">
+        <div class="wrapper">
+            Hero Section
+        </div>
+    </section>
 
-    <title>Home &mdash; Threadly</title>
+    <!-- BEST SELLING PRODUCTS SECTION -->
+    <section class="section-bestselling">
+        <div class="wrapper">
+            Best Selling
+        </div>
+    </section>
 
-    <!-- INTER GOOGLE FONT -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com" />
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
-        rel="stylesheet" />
-</head>
+    <!-- CTA SECTION -->
+    <section class="section-cta">
+        <div class="wrapper">
+            CTA Section
+        </div>
+    </section>
 
-<body>
-    <h1>Home Page</h1>
-</body>
+    <!-- PRODUCT HIGHLIGHTS SECTION -->
+    <section class="section-highlights">
+        <div class="wrapper">
+            Highlights
+        </div>
+    </section>
+</main>
 
-</html>
+<?php loadPartial('footer'); ?>
