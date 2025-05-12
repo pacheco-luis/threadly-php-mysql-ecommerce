@@ -33,10 +33,16 @@ class Database
      * @return PDOStatement
      * @throws PDOException
      */
-    public function query($query): PDOStatement
+    public function query($query, $params = []): PDOStatement
     {
         try {
             $stmt = $this->conn->prepare($query);
+
+            // Bind parameters
+            foreach ($params as $key => $value) {
+                $stmt->bindValue(':' . $key, $value);
+            }
+
             $stmt->execute();
             return $stmt;
         } catch (PDOException $e) {

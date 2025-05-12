@@ -38,7 +38,8 @@
                 role="list">
                 <?php foreach ($bestSelling as $product): ?>
                     <!-- PRODUCT CARD -->
-                    <article
+                    <a
+                        href="/listings?id=<?= $product->id ?>"
                         class="product-card"
                         role="listitem">
                         <!-- PRODUCT IMAGE-->
@@ -55,7 +56,7 @@
                             </span>
                             <span class="product-card__price"><?= formatCurrency($product->price) ?></span>
                         </div>
-                    </article>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -132,7 +133,8 @@
                         role="list">
                         <?php foreach ($featured as $product): ?>
                             <!-- PRODUCT CARD -->
-                            <article
+                            <a
+                                href="/listings?id=<?= $product->id ?>"
                                 class="product-card"
                                 role="listitem">
                                 <!-- PRODUCT IMAGE-->
@@ -149,7 +151,7 @@
                                     </span>
                                     <span class="product-card__price"><?= formatCurrency($product->price) ?></span>
                                 </div>
-                            </article>
+                            </a>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -168,7 +170,8 @@
                         role="list">
                         <?php foreach ($latest as $product): ?>
                             <!-- PRODUCT CARD -->
-                            <article
+                            <a
+                                href="/listings?id=<?= $product->id ?>"
                                 class="product-card"
                                 role="listitem">
                                 <!-- PRODUCT IMAGE-->
@@ -185,7 +188,7 @@
                                     </span>
                                     <span class="product-card__price"><?= formatCurrency($product->price) ?></span>
                                 </div>
-                            </article>
+                            </a>
                         <?php endforeach; ?>
                     </div>
                 </div>

@@ -9,3 +9,6 @@
 
 # macOS system file
 .DS_Store
+
+# Ignore uploaded images
+/public/uploads/
