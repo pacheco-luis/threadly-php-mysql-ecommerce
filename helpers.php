@@ -17,13 +17,15 @@ function basePath($path = ''): string
  * @param string $name
  * @return void
  */
-function loadView($name): void
+function loadView($name, $data = []): void
 {
     $viewPath = basePath('views/' . $name . '.view.php');
 
     if (!file_exists($viewPath)) {
         exit("View '{$name}' not found.");
     }
+
+    extract($data);
 
     require $viewPath;
 }
@@ -70,4 +72,15 @@ function inspectAndDie($value): void
     var_dump($value);
     echo '</pre>';
     die();
+}
+
+/**
+ * Format a number as currency
+ * 
+ * @param string $number
+ * @return string
+ */
+function formatCurrency($number): string
+{
+    return '$' . number_format($number, 2);
 }

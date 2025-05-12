@@ -5,7 +5,7 @@ class Router
     protected $routes = [];
 
     /**
-     * Register a route
+     * Add a new route
      *
      * @param string $method
      * @param string $uri
