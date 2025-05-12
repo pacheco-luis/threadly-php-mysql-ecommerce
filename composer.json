@@ -1,0 +1,16 @@
+{
+	"name": "pacheco-luis/threadly-php-mysql-ecommerce",
+	"description": "A simple PHP and MySQL e-commerce application.",
+	"authors": [
+		{
+			"name": "Luis Pacheco",
+			"email": "pachecoluis9615@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Framework\\": "Framework/",
+			"App\\": "App/"
+		}
+	}
+}
